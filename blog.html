@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>University website</title>
+        <link rel="stylesheet" href="style.css"
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    </head>
+<body>
+        <section class="sub-header">
+            <nav>
+            
+            <a href="index.html"> <img src="images/logo.png"> </a>
+                <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                    <li><a href="index.html">ДОМОЙ</a></li>
+                    <li><a href="about.html">О Нас</a></li>
+                    <li><a href="course.html">Курсы</a></li>
+                    <li><a href="blog.html">Новости</a></li>
+                    <li><a href="contacts.html">Связаться с Нами</a></li>
+                    </ul>
+                
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        <h1>Наши сертификаты и Программы На 2023 год</h1>
+        </section>
+    
+<!-------------------- Blog page Content------------->
+    
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+            <img src="images/certificate.jpeg">
+            <h2>Наши сертификаты и Программы На 2023 год</h2>
+                
+            <h3>Вручение дипломов выпускникам ФПТ</h3>
+<p>Cегодня в АТУ состоялось вручение дипломов выпускникам ведущего и самого многочисленного Факультета пищевых технологий.
+                </p>
+<p>В этом году университет выпустил восемьсот молодых специалистов для пищевой и перерабатывающей промышленности.
+<br>
+Это высококвалифицированные кадры для предприятий по переработке зерна, хлебопекарной, макаронной, кондитерской, молочной, мясной, рыбной отрасли, ликероводочных, винодельческих, пивоваренных заводов, по выпуску безалкогольных напитков. </p>
+<p> Наши выпускники также востребованы в проектно-конструкторских организациях, научно-исследовательских и испытательных центрах и лабораториях, службах сертификации и идентификации сырья и готовой продукции, в органах по контролю за производством и оборотом пищевой продукции и на нефтехимических предприятиях.<br>
+    Дорогие выпускники! Четыре года вашей студенческой жизни позади. Впереди – новая жизнь, где все зависит от ваших целей, желания, настойчивости.</p>
+<p>
+Мы желаем вам удачи! Пусть все ваши мечты сбудутся!</p>
+                
+                
+                <div class="comment-box">
+                        <h3>Оставь комментарий</h3>
+                    
+                        <form class="comment-form">
+                            <input type="text" placeholder="Введите Имя">
+                            <input type="email" placeholder="Ваш Имейл">
+                            <textarea rows="5" placeholder="Комментарий" >
+                                
+                            </textarea>
+                            <button type="submit" class="hero-btn red-btn" >Отправить Комментарий</button>
+                        </form>
+                    
+                </div>    
+            </div>
+            
+            <div class="blog-right">
+            <h3>Категория Постов</h3>
+            <div>
+                <span>Бизнес Аналитика</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Data Science</span>
+                <span>29</span>
+            </div>
+            <div>
+                <span>Машинное Обучение</span>
+                <span>32</span>
+            </div>
+            <div>
+                <span>Информационные Системы</span>
+                <span>35</span>
+            </div>
+            <div>
+                <span>Философия</span>
+                <span>34</span>
+            </div>
+            </div>
+        </div>
+    </section>
+   
+
+
+<!-----------------Footer----------->
+    <section class="footer">
+        <h4>О НАС</h4>
+        <p>Развитие науки и образования является важной приоритетной задачей социально-экономической модернизации, достижения конкурентно-способности экономики и вхождения Казахстана в число 30-ти развитых стран мира.<br>
+Ключевые задачи современной системы образования, подготовки и переподготовки кадров, были подчеркнуты Президентом страны – Лидером нации Н.А.Назарбаевым в ежегодных Посланиях народу Казахстана «Стратегия «Казахстан – 2050: новый политический курс состоявшегося государства» и «Казахстанский путь – 2050: единая цель, единые интересы, единое будущее».</p>
+        <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <p>Made with <i class="far fa-heart"></i> by Omar </p>
+</div>
+    
+    </section>
+    
+    
+    
+    
+    
+
+
+<!------JavaScript for Toggle Menu--------->
+    <script>
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right = "0";
+        
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+        
+    }
+        
+    </script>
+    
+</body>
+    
+</html>

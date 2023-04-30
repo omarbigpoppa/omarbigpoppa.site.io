@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>University website</title>
+        <link rel="stylesheet" href="style.css"
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    </head>
+<body>
+        <section class="sub-header">
+            <nav>
+            
+            <a href="index.html"> <img src="images/logo.png"> </a>
+                <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                    <li><a href="index.html">ДОМОЙ</a></li>
+                    <li><a href="about.html">О Нас</a></li>
+                    <li><a href="course.html">Курсы</a></li>
+                    <li><a href="blog.html">Новости</a></li>
+                    <li><a href="contacts.html">Связаться с Нами</a></li>
+                    </ul>
+                
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        <h1>О Нас</h1>
+        </section>
+
+<!--------ABOUT US CONTENT----------->
+    
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>Мы Самый Большой Университет В Мире</h1>
+                <p>АТУ является одним из ведущих высших учебных заведений Казахстана и Центральной Азии, осуществляющим уже более 65 лет подготовку специалистов и научных кадров для пищевой, перерабатывающей, текстильной и легкой отраслей промышленности, индустрии сервиса и гостеприимства. <br>АТУ присутствует на рынке образовательных услуг с 1957 года и в последние годы планомерно реализует принципы Болонской Декларации, активно интегрируется в глобальное образовательное пространство и становится всё более узнаваемым в мире. С 2005 года в АТУ функционирует Система Менеджмента Качества (СМК), <br>сертифицированная на соответствие требованиям международных стандартов ИСО 9001 — 2015. Результативность СМК АТУ подтверждена независимыми аудитами, проведёнными со стороны Ассоциации по сертификации — Русский регистр — члена международной сертификационной сети IQNet.</p>
+                <a href="" class="hero-btn red-btn">Узнать Больше</a>
+            </div>
+            <div class="about-col">
+                <img src="images/about.jpeg">
+            </div>
+        </div>
+    
+    </section>
+
+
+<!-----------------Footer----------->
+    <section class="footer">
+        <h4>О НАС</h4>
+        <p>Развитие науки и образования является важной приоритетной задачей социально-экономической модернизации, достижения конкурентно-способности экономики и вхождения Казахстана в число 30-ти развитых стран мира.<br>
+Ключевые задачи современной системы образования, подготовки и переподготовки кадров, были подчеркнуты Президентом страны – Лидером нации Н.А.Назарбаевым в ежегодных Посланиях народу Казахстана «Стратегия «Казахстан – 2050: новый политический курс состоявшегося государства» и «Казахстанский путь – 2050: единая цель, единые интересы, единое будущее».</p>
+        <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <p>Made with <i class="far fa-heart"></i> by Omar </p>
+</div>
+    
+    </section>
+    
+    
+    
+    
+    
+
+
+<!------JavaScript for Toggle Menu--------->
+    <script>
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right = "0";
+        
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+        
+    }
+        
+    </script>
+    
+</body>
+    
+</html>

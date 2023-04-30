@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>University website</title>
+        <link rel="stylesheet" href="style.css"
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    </head>
+<body>
+        <section class="sub-header">
+            <nav>
+            
+            <a href="index.html"> <img src="images/logo.png"> </a>
+                <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                    <li><a href="index.html">ДОМОЙ</a></li>
+                    <li><a href="about.html">О Нас</a></li>
+                    <li><a href="course.html">Курсы</a></li>
+                    <li><a href="blog.html">Новости</a></li>
+                    <li><a href="contacts.html">Связаться с Нами</a></li>
+                    </ul>
+                
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        <h1>Контакты и Местоположение</h1>
+        </section>
+
+<!--------CONTACT US----------->
+
+    <section class="location">
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11623.791144273782!2d76.9266151!3d43.2525161!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836eb6e3358263%3A0xd0eec60cc5996f34!2z0JDQu9C80LDRgtGLINGC0LXRhdC90L7Qu9C-0LPQuNGP0LvRi9KbINGD0L3QuNCy0LXRgNGB0LjRgtC10YLRlg!5e0!3m2!1skk!2skz!4v1682439156931!5m2!1skk!2skz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    </section>
+    
+    
+<section class="contact-us"> 
+    <div class="row">
+    <div class="contact-col">
+    <div>
+         <i class="fa-solid fa-house"></i>
+        <span>
+            <h5>Ул. Толе Би 100.</h5>
+            <p>Алмата, Казахстан, КЗ</p>
+        </span>
+    </div>
+    
+    <div>
+         <i class="fas fa-phone"></i>
+        <span>
+            <h5>+7 705 222 22 22 </h5>
+            <p>С Пон по Пят с 8.30 до 18.00</p>
+        </span>
+    </div>
+    <div>
+         <i class="fa-solid fa-envelope"></i>
+        <span>
+            <h5>info@atu.kz</h5>
+            <p>Напишите нам</p>
+        </span>
+        </div>
+    </div>
+        
+<div class="contact-col">
+            
+        <form action="form-handler.php" method="post">
+            <input type="text" name="name" placeholder="Введите Ваше Имя" required>
+            <input type="email"name="email" placeholder="Введите Имейл" required>
+            <input type="text" name="subject" placeholder="Введите Вашу Специальность" required>
+            <textarea rows="8" name="message" placeholder="Сообщение" required ></textarea>
+            <button type="submit" class="hero-btn red-btn" >Отправить</button>
+        </form> 
+    
+ </div>                
+</div>
+    
+    
+    
+    
+</section>    
+    
+    
+    
+    
+    
+    
+   
+
+<!-----------------Footer----------->
+    <section class="footer">
+        <h4>О НАС</h4>
+        <p>Развитие науки и образования является важной приоритетной задачей социально-экономической модернизации, достижения конкурентно-способности экономики и вхождения Казахстана в число 30-ти развитых стран мира.<br>
+Ключевые задачи современной системы образования, подготовки и переподготовки кадров, были подчеркнуты Президентом страны – Лидером нации Н.А.Назарбаевым в ежегодных Посланиях народу Казахстана «Стратегия «Казахстан – 2050: новый политический курс состоявшегося государства» и «Казахстанский путь – 2050: единая цель, единые интересы, единое будущее».</p>
+        <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <p>Made with <i class="far fa-heart"></i> by Omar </p>
+</div>
+    
+    </section>
+    
+    
+    
+    
+    
+
+
+<!------JavaScript for Toggle Menu--------->
+    <script>
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right = "0";
+        
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+        
+    }
+        
+    </script>
+    
+</body>
+    
+</html>
